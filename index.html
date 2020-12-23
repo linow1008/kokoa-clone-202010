@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to KoKoa World</title>
 </head>
 <body>
-    <!-- bem 규칙에 따르기-->
-    <div class="status-bar">
-        <div class="status-bar_column">
+    <div class="status-bar"> <!--상태바(헤더)-->
+        <div class="status-bar__column">
             <span>No Service</span>
-            <!--To Do: 와이파이 아이콘 헤더부분-->
+            <i class="fas fa-wifi"></i>
         </div>
-        <div class="status-bar_column">
+        <div class="status-bar__column">
             <span>18:43</span>
         </div>
-        <div class="status-bar_column">
+        <div class="status-bar__column">
             <span>11%</span>
-            <!-- 배터리아이콘-->
-            <!-- 충전 아이콘-->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
         </div>
     </div>
+        <!--상태바 끝-->
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
+        <p class="welcome-header__text">
+            If you have a KaKao Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <a href="#">Find KaKao Account or Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
