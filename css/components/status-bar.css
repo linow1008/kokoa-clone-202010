@@ -2,12 +2,13 @@
     display:flex;
     justify-content: center;
     padding: 5px 3px;
+    font-weight: 600;
 }
 .status-bar__column{
     width: 33%;
 }
 .status-bar__column:first-child span {
-    margin-right : 5px;
+    margin-right : 5px; /*No service 부분과 와이파이 간격설정*/
 }
 .status-bar__column:nth-child(2) {
     display:flex;
@@ -19,5 +20,5 @@
     align-items: center;
 }
 .status-bar__column .fa-battery-full{
-    margin : 0px 5px
+    margin : 0px 5px;
 }

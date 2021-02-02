@@ -1,0 +1,11 @@
+.badge{
+    background-color:tomato;
+    width:30px;
+    height:30px;
+    border-radius: 15px; /*사각형을 원으로 만들고 싶으면 사각형 px값에 반을 넣으면 됨*/
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-weight:600;
+}
